@@ -80,8 +80,8 @@ class Intro extends React.Component {
       isBlurred:true,
       ExpandableCard1Visible: true
     });
-    document.getElementById("blur-content").style.filter = "blur(5px)";
-    document.getElementById("ex-card-1").style.display = "block";
+    // document.getElementById("blur-content").style.filter = "blur(5px)";
+    // document.getElementById("ex-card-1").style.display = "block";
   }
 
   handleCard2Click() {
@@ -89,8 +89,8 @@ class Intro extends React.Component {
       isBlurred:true,
       ExpandableCard2Visible: true
     });
-    document.getElementById("blur-content").style.filter = "blur(5px)";
-    document.getElementById("ex-card-2").style.display = "block";
+    // document.getElementById("blur-content").style.filter = "blur(5px)";
+    // document.getElementById("ex-card-2").style.display = "block";
   }
 
   handleCard3Click() {
@@ -98,9 +98,9 @@ class Intro extends React.Component {
       isBlurred:true,
       ExpandableCard3Visible: true
     });
-    document.getElementById("blur-content").style.filter = "blur(5px)";
-    document.getElementById("ex-card-3").style.display = "block";
-    document.getElementById("ex-card-3").style.margin = "auto";
+    // document.getElementById("blur-content").style.filter = "blur(5px)";
+    // document.getElementById("ex-card-3").style.display = "block";
+    // document.getElementById("ex-card-3").style.margin = "auto";
   }
 
   handleCardExit() {
@@ -111,12 +111,12 @@ class Intro extends React.Component {
         ExpandableCard2Visible: false,
         ExpandableCard3Visible: false
       });
-      document.getElementById("blur-content").style.filter = "none";
+      //document.getElementById("blur-content").style.filter = "none";
       let hiddenCards = document.getElementsByClassName("expanded-card");
 
       // hide all cards again, so we don't need to know which is open
       for (var i = 0; i < hiddenCards.length; ++i) {
-        hiddenCards[i].style.display = "none";
+        //hiddenCards[i].style.display = "none";
       }
     }
   }
