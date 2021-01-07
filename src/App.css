@@ -1,4 +1,4 @@
-/*.App {
+.App {
     text-align: center;
 }
 
@@ -43,7 +43,7 @@
 
 .projects-page {
     position: relative;
-    background-image: url(hacker.jpg);
+    background-image: url(./hacker.jpg);
     color: whitesmoke;
     min-height: 100vh;
     display: flex;
@@ -104,4 +104,4 @@
     to {
         transform: rotate(360deg);
     }
-}*/
+}
