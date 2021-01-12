@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-page/static/css/main.16a30a69.chunk.css",
-    "main.js": "/react-page/static/js/main.d4d30ce1.chunk.js",
-    "main.js.map": "/react-page/static/js/main.d4d30ce1.chunk.js.map",
+    "main.css": "/react-page/static/css/main.dadb66e0.chunk.css",
+    "main.js": "/react-page/static/js/main.1ff57603.chunk.js",
+    "main.js.map": "/react-page/static/js/main.1ff57603.chunk.js.map",
     "runtime-main.js": "/react-page/static/js/runtime-main.8d169ac2.js",
     "runtime-main.js.map": "/react-page/static/js/runtime-main.8d169ac2.js.map",
     "static/js/2.316867a0.chunk.js": "/react-page/static/js/2.316867a0.chunk.js",
@@ -10,15 +10,15 @@
     "static/js/3.edf849ea.chunk.js": "/react-page/static/js/3.edf849ea.chunk.js",
     "static/js/3.edf849ea.chunk.js.map": "/react-page/static/js/3.edf849ea.chunk.js.map",
     "index.html": "/react-page/index.html",
-    "static/css/main.16a30a69.chunk.css.map": "/react-page/static/css/main.16a30a69.chunk.css.map",
+    "static/css/main.dadb66e0.chunk.css.map": "/react-page/static/css/main.dadb66e0.chunk.css.map",
     "static/js/2.316867a0.chunk.js.LICENSE.txt": "/react-page/static/js/2.316867a0.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/react-page/static/media/hacker.9ca0a06f.jpg",
+    "static/media/App.css": "/react-page/static/media/pexels-sebastian-sørensen-750225.a51c78b8.jpg",
     "static/media/logo.6ce24c58.svg": "/react-page/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8d169ac2.js",
     "static/js/2.316867a0.chunk.js",
-    "static/css/main.16a30a69.chunk.css",
-    "static/js/main.d4d30ce1.chunk.js"
+    "static/css/main.dadb66e0.chunk.css",
+    "static/js/main.1ff57603.chunk.js"
   ]
 }
