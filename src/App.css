@@ -46,7 +46,7 @@
   font-size: 55px;
   /*margin: 10px 0 0 10px;*/
   white-space: nowrap;
-  overflow: hidden;
+  overflow: auto;
   width: 30em;
 }
 
