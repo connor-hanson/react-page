@@ -11,9 +11,16 @@ class BackgroundCanvas extends React.Component {
     }
 
     render() {
-        return (
-            <canvas id="background-canvas"></canvas>
-        );
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            return (
+                <div id="mobile_background"></div>
+            );
+        } else{
+            return (
+                <canvas id="background-canvas"></canvas>
+            );
+          }
+        
     }
 }
 

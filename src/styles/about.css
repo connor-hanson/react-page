@@ -39,6 +39,16 @@ h1 {
     z-index: -1;
 }
 
+#mobile-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* width: 100vw;
+    height: 100vh; */
+    z-index: -1;
+    background-color: black;
+}
+
 .content {
     background-color: #121212;
     display: table;
