@@ -1,183 +1,21 @@
-import logo from './logo.svg';
-import hacker from './hacker.jpg';
-import './App.css';
+import logo from './images/logo.svg';
+import './styles/App.css';
+
+import PortfolioPage from './Portfolio';
+import AboutPage from './about';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
+import Landing from './Landing_Page'
+import DownArrow from './utils/Bottom_Nav'
 
 var React = require('react');
-
-class DownArrow extends React.Component {
-  // props contains what we scroll to
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  // move down to next slide
-  handleClick(nextY) {
-    window.scroll({
-       top: nextY,
-        left: 0,
-        behavior: 'smooth'
-      });
-  }
-
-  render() {
-    return (
-      <div className="scroll-arrow" onClick={() => this.handleClick(this.props.nextY)}>
-          <img width="32"
-          alt="Arrow-down"
-          src="https://upload.wikimedia.org/wikipedia/commons/2/24/White_arrow_down.svg"/>
-      </div>
-    );
-  }
-}
-
-class TypedText extends React.Component {
-  constructor(props) {
-    super(props);
-
-    // TODO: replace words
-    this.state = {
-      animate: false,
-      currText:"L",
-      //finalText: "Web Developer.\nComputer Science Major.\nFrench Minor.",
-      finalText: "Connor Hanson",
-      charCounter: 0
-    }
-  }
-
-  // begin animation when component loads to DOM
-  componentDidMount() {
-    this.animateTextAndBar();
-  }
-
-
-  // TODO animate typing bar
-  animateTextAndBar() {
-
-    let finalText = this.state.finalText;
-    let charCounter = this.state.charCounter;
-    let element = document.getElementById('typing-text');
-    var newChar;
-
-    requestAnimationFrame(function animate() {
-      newChar = finalText.charAt(charCounter);
-      
-      // controls typing speed
-      setTimeout(() => {
-        let cursor = document.getElementById("type-cursor");
-        if (cursor) {
-          cursor.parentElement.removeChild(cursor);
-          element.innerHTML += newChar;
-          element.appendChild(cursor);
-        } else {
-          element.innerHTML += newChar;
-        }
-        
-        charCounter += 1;
-
-        // wait a few seconds
-        if (newChar == ' ' && charCounter < finalText.length) {
-          setTimeout(() => {
-            //element.innerHTML += '<br/>';
-            requestAnimationFrame(animate);
-
-          }, 500); // pause 2 seconds between lines
-        }
-        else if (charCounter < finalText.length) {
-          requestAnimationFrame(animate);
-        }
-      }, 80);
-    });
-  }
-
-  render() {
-    return (
-      <div id="typing-text-container">
-        <h1 id="typing-text"><span id="type-cursor">|</span></h1>
-      </div>
-    );
-  }
-}
-
-// Landing Page
-class Welcome extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      topY: 0,
-      bottomY: window.innerHeight
-    }
-  }
-
-  onClickAboutMe() {
-    return "";
-  }
-
-  onClickProjects() {
-    return"";
-  }
-
-  onClickContactMe() {
-    return"";
-  }
-
-  render() {
-    return (
-
-        <header className="App-header">
-
-          <div className="navbar">
-            <div className="navbar-first col-3" onClick={() => alert('About me')}>
-              <a>About Me</a>
-            </div>
-            <div className="navbar-first col-3" onClick={() => alert('projects')}>
-              <a>Portfolio</a>
-            </div>
-            <div className="navbar-first col-3" onClick={() => alert('contact')}>
-              <a>Contact Me</a>
-            </div>
-          </div>
-
-
-          {/* <h1>Connor Hanson</h1> */}
-          <TypedText />
-
-          {/* TODO: programatically adjust size based on screen size*/ }
-          <div className="contact-column">
-            <div className="contact-bubble">
-              <a >
-              <img width="32"
-              src="https://upload.wikimedia.org/wikipedia/commons/3/30/Aiga_mail_inverted_nobg.svg"></img>
-              </a>
-            </div>
-
-            <div className="contact-bubble">
-              <a href="https://www.linkedin.com/in/connor-hanson-134b4419b">
-              <img width="32"
-              src="https://upload.wikimedia.org/wikipedia/commons/8/8f/LinkedIn_font_awesome.svg"></img>
-              </a>
-            </div>
-            <div className="contact-bubble">
-              <a href="https://github.com/connor-hanson">
-                <img width="32"
-                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"></img>
-              </a>
-            </div>
-
-          </div>
-
-          {/* <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Hello, I'm Connor. nice to meet you.
-          </p> */}
-
-          <DownArrow nextY={this.state.bottomY}/>
-
-        </header>
-    );
-  }
-}
 
 class Intro extends React.Component {
   constructor(props) {
@@ -250,7 +88,6 @@ class Intro extends React.Component {
 
         <div id="blur-content">
           <h1>About Me</h1>
-          <p>UW Madison senior graduting with a CS major and a French certificate. I am a talented programmer with experience in a variety of languages (C, C++, Java, JS, Python, PHP, CSS, HTML) and frameworks/templating languages (React.js, Jinja2, Flask, HTML). I am a developer who likes developing both solo projects (complete freedom!!) as well as working with one or more other developers (Brings out my strengths and makes me a better dev).</p>
 
           <p>Computer Science is my degree, but design is my <i>passione</i></p>
           <div className="row">
@@ -298,16 +135,6 @@ class Intro extends React.Component {
   }
 }
 
-class Projects extends React.Component {
-  render() {
-    return (
-      <div className="projects-page">
-        <p>My Projects</p>
-      </div>
-    );
-  }
-}
-
 // menu displaying areas to nav to
 class DropMenu extends React.Component {
   render() {
@@ -320,9 +147,15 @@ class DropMenu extends React.Component {
 function App() {
   return (
   <div className="App">
-    <Welcome />
-    <Intro />
-    <Projects />
+    <Router>
+      
+      <Switch>
+        <Route path="/home"><Landing /></Route>
+        <Route path="/about"><AboutPage /></Route>
+        <Route path="/portfolio"><PortfolioPage /></Route>
+        <Route path="/contact"><Landing /></Route>
+      </Switch>
+    </Router>
   </div>
   );
 }

@@ -1,0 +1,149 @@
+
+/** Navigation Bar Styling **/
+.navbar {
+    /* background-color: black; */
+    display: inline-block;
+    width: 100vw;
+    height: 6vh;
+    text-align: center;
+    /* border-bottom: 3px solid #E1DEDE; */
+    font-size: calc(10px + 2vmin);
+    /* background-color: black; */
+}
+
+.navbar-first {
+    /* background-color: black; */
+    color: white;
+    height: 100%;
+    padding-top: 1vh;
+    justify-content: center;
+    /* border-bottom: 3px solid white; */
+}
+
+.navbar-first a {
+    text-decoration: none;
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.navbar-first a:hover {
+    /* color: yellow; */
+    border-bottom: 3px solid whitesmoke;
+    border-radius: 5px; 
+}
+
+
+/** Floating Socials Bar Styling **/
+
+.contact-bubble {
+    background-color: #E1DEDE;
+    color: black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+}
+
+.contact-bubble a {
+    padding-top: 1vh;
+}
+
+.contact-column {
+    position: fixed;
+    right: 1vw;
+    bottom: 5vh;
+    float: right;
+    z-index: 2;
+}
+
+/** CAROUSEL **/
+#selected-carousel {
+    /* background-color: red; */
+    border: 2px solid grey;
+}
+
+.carousel-content {
+    /* background-color: black; */
+    height: 20%;
+    margin: 10px;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+#carousel-focus {
+    /* background-color: green; */
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+
+#carousel-focus img {
+    width: 25%;
+    height: 25%;
+    float: left;
+}
+
+#carousel-focus a {
+    text-decoration: none;
+    color: white;
+}
+
+.project-header-info {
+    width: 75%;
+    height: 25%;
+    display: inline-block;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.project-header-info h4 {
+    color: grey;
+}
+
+.link-container {
+    width: 80%;
+    height: 20%;
+    background-color: dodgerblue;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    margin: auto;
+    display: inline-block;
+}
+
+.carousel-items {
+    height: 100%;
+    width: 25%;
+    float: left;
+    overflow: scroll;
+}
+
+.carousel-container {
+    background-color: #121212;
+    display: table;
+    /* display: flexbox; */
+    /* justify-content: center; */
+    height: 80vh;
+    width: 80%;
+    animation: fadeIn 5s;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 1%;
+}
+
+.project-desc {
+    text-align: left;
+}
+
+#cnn-display {
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+}
