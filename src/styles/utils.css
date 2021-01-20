@@ -54,6 +54,30 @@
     padding-top: 1vh;
 }
 
+@media only screen and (max-width: 768px) {
+    .contact-column {
+        position: fixed;
+        display: inline-block;
+        left: 19vw;
+        bottom: 1vh;
+        z-index: 2;
+        margin: auto;
+    }
+
+      .contact-bubble {
+        background-color: #E1DEDE;
+        color: black;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1vh;
+        float: left;
+    }
+}
+
 .contact-column {
     position: fixed;
     right: 1vw;

@@ -6,6 +6,7 @@
   color: #E1DEDE;
   font-family: Helvetica;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .scroll-arrow {
@@ -226,4 +227,46 @@ span {
     to {
         transform: rotate(360deg);
     }
+}
+
+@media only screen and (max-width: 768px) {
+  .App-header {
+    position: relative;
+    background-color: black;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+  }
+
+
+  #typing-text-container {
+    /* background-color: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    min-height: 200px;
+    max-height: 300px;
+    max-width: 60%;
+    padding-left: 5vw; */
+    margin-left: 10vw;
+    margin-top: 20vh;
+  }
+
+  /* TODO: fix formatting on mobile */
+  #typing-text {
+    color: white;
+    font-size: 25px;
+    margin: 10px 0 0 10px;
+    /* white-space: nowrap; */
+    /* overflow: auto; */
+    width: 30em;
+  }
+
+  .contact-column {
+    position: fixed;
+    left: 1vw;
+    bottom: 1vh;
+    z-index: 2;
+  }
 }
