@@ -7,7 +7,11 @@ var React = require('react');
 class BackgroundCanvas extends React.Component {
 
     componentDidMount() {
-        animatePage();
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+        } else {
+            animatePage();
+        }
     }
 
     render() {
