@@ -150,7 +150,7 @@ function App() {
     <Router>
       
       <Switch>
-        <Route path="/home"><Landing /></Route>
+        <Route path="/react-page"><Landing /></Route>
         <Route path="/about"><AboutPage /></Route>
         <Route path="/portfolio"><PortfolioPage /></Route>
         <Route path="/contact"><Landing /></Route>
