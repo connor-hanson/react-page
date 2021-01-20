@@ -14,7 +14,7 @@ class NavBar extends React.Component {
         return (
         <div className="navbar">
             <div className="navbar-first col-4">
-                <Link to="/home">Home</Link>
+                <Link to="/react-page">Home</Link>
             </div>
             <div className="navbar-first col-4">
                 <Link to="/about">About Me</Link>
