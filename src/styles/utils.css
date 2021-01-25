@@ -54,14 +54,22 @@
     padding-top: 1vh;
 }
 
+
+.contact-column {
+    position: fixed;
+    right: 1vw;
+    bottom: 5vh;
+    float: right;
+    z-index: 2;
+}
+
 @media only screen and (max-width: 768px) {
     .contact-column {
         position: fixed;
         display: inline-block;
-        left: 19vw;
         bottom: 1vh;
         z-index: 2;
-        margin: auto;
+        margin: 0 auto;
     }
 
       .contact-bubble {
@@ -78,15 +86,9 @@
     }
 }
 
-.contact-column {
-    position: fixed;
-    right: 1vw;
-    bottom: 5vh;
-    float: right;
-    z-index: 2;
-}
 
 /** CAROUSEL **/
+
 #selected-carousel {
     /* background-color: red; */
     border: 2px solid grey;
@@ -170,4 +172,18 @@
     height: 100%;
     width: 100%;
     /* background-color: green; */
+}
+
+@media only screen and (max-width: 768px) {
+    #carousel-focus {
+        display: none;
+        width: 0%;
+    }
+
+    .carousel-items {
+        height: 100%;
+        width: 100%;
+        /* float: left; */
+        overflow: scroll;
+    }
 }

@@ -3,6 +3,7 @@ import './styles/App.css';
 
 import PortfolioPage from './Portfolio';
 import AboutPage from './about';
+import ContactEmail from './utils/contactEmail';
 
 import {
   BrowserRouter as Router,
@@ -153,7 +154,7 @@ function App() {
         <Route path="/react-page"><Landing /></Route>
         <Route path="/about"><AboutPage /></Route>
         <Route path="/portfolio"><PortfolioPage /></Route>
-        <Route path="/contact"><Landing /></Route>
+        <Route path="/contact"><ContactEmail /></Route>
       </Switch>
     </Router>
   </div>

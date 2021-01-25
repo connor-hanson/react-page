@@ -1,0 +1,31 @@
+form.contact-form {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.logical {
+    margin-top: 3vh;
+}
+
+textarea {
+    width: 80%;
+    height: 40vh;
+}
+
+#username, #useremail {
+    width: 30vw;
+    height: 5vh;
+}
+
+.contact-us-container {
+    width: 100vw;
+    height: 100vh;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    display: flexbox;
+    overflow: scroll;
+}

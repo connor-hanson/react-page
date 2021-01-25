@@ -23,7 +23,7 @@ class NavBar extends React.Component {
                 <Link to="/portfolio">Portfolio</Link>
             </div>
             <div className="navbar-first col-4">
-                <Link to="Contact">Contact Me</Link>
+                <Link to="/contact">Contact Me</Link>
             </div>
         </div>
         );

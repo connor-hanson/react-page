@@ -7,6 +7,7 @@
   font-family: Helvetica;
   text-decoration: none;
   overflow: hidden;
+  
 }
 
 .scroll-arrow {
@@ -23,15 +24,6 @@
   .App-logo {
       animation: App-logo-spin infinite 20s linear;
   }
-}
-
-
-.contact-column {
-  position: fixed;
-  right: 1vw;
-  bottom: 5vh;
-  float: right;
-  z-index: 2;
 }
 
 /*****************************************************/
@@ -80,21 +72,6 @@ span {
 
 
 
-.contact-bubble {
-    background-color: #E1DEDE;
-    color: black;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1vh;
-}
-
-.contact-bubble a {
-    padding-top: 1vh;
-}
 
 .navbar {
     /* background-color: black; */
@@ -235,6 +212,7 @@ span {
     background-color: black;
     background-size: cover;
     min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
     font-size: calc(10px + 2vmin);
@@ -261,12 +239,5 @@ span {
     /* white-space: nowrap; */
     /* overflow: auto; */
     width: 30em;
-  }
-
-  .contact-column {
-    position: fixed;
-    left: 1vw;
-    bottom: 1vh;
-    z-index: 2;
   }
 }
