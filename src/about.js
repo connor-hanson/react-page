@@ -56,7 +56,9 @@ import {
                         <div className="col-3">
                             <div className="inner-col">
                                 <h2>Back-End</h2>
-                                <p>I enjoy bringing my own, as well other people's visions, to life on a screen.</p>
+                                <p>I have a lot of experience building applications for my classes. In particular, 
+                                    my operating systems class had us design and implement programs in a way that makes me a 
+                                    versitile and strong backend engineer.</p>
                             </div>
                         </div>
                     </div>
