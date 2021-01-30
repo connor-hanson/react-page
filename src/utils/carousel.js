@@ -178,7 +178,7 @@ class Graphicsp4_Display extends Main_Display {
                         <h4>P7 - CS 559, Graphics</h4>
                         <div className="link-container">
                             <a className="project-link"
-                            href="">See it on GitHub</a>
+                            href="https://github.com/connor-hanson/cs559/tree/master/p7_v2">See it on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -445,7 +445,7 @@ class Carousel extends React.Component {
                         this.switchtoCNN
                         
                     }>
-                        <img src={cnn_logo} alt="Neural Network Project" height="50" width="50"></img>
+                        {/* <img src={cnn_logo} alt="Neural Network Project" height="50" width="50"></img> */}
                         Neural Network
                     </div>
 
